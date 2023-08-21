@@ -1,0 +1,21 @@
+user create ပြီးတာနဲ့ security and credential ကို သွားပါ။
+create access key ကို နှိပ်ပါ။
+Application Running Outside AWS ကို ရွေးပါ။
+Description tag value မှာ ဘာမှာ မထည့်ဘဲ next ကို နှိပ်ပါ။
+ပြီးတာနဲ့ ACCESS_KEY တွေ SECRET_KEY တွေ သေချာမှတ်သားထားပါ။
+.env မှာ လာထည့်ပါ။
+
+
+Terminal ကနေ တဆင့် npm i @aws-sdk/client-s3 ကို သွင်းပါ။
+yarn add mime-types ကို ထပ်သွင်းပါ။
+
+Spinner ထည့်ဖို့ yarn site ကနေ react-spinners ကိုရှာသွင်းပါ။ "yarn add react-spinners"
+Spinner မျိုးစုံ ရှိပါတယ်။ ကိုယ်ကြိုက်တာ ရွေးလို့ရပါတယ်။
+
+ဓာတ်ပုံတွေ Sortable လုပ်နိုင်ဖို့ yarn add react-sortablejs နဲ့ yarn add sortablejs
+ဒါတွေကို သွင်းပါ။
+
+Confirmation Alert Box အတွက် yan website ကနေ yarn add react-sweetalert2ကို သွင်းပါ။
+
+
+5:55:33
