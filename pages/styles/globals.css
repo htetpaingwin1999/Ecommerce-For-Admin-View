@@ -62,10 +62,11 @@ table.basic a{
 
 .slider-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: left;
     align-items: left;
     height: auto;
+    margin-bottom: 10px;
   }
   
   .slider-button {

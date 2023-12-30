@@ -104,9 +104,9 @@ export default function Authors() {
 
   return (
     <Layout>
-      <Link className="btn-primary" href="/authors/new">
+      {/* <Link className="btn-primary" href="/authors/new">
         Add new author
-      </Link>
+      </Link> */}
       <input
         type="text"
         placeholder="Search..."

@@ -120,17 +120,34 @@ export default function ProductForm({
   return (
     <form onSubmit={saveProduct} encType="multipart/form-data" className="">
       <label>Product name</label>
+      <br/>
       <input
         type="text"
         placeholder="product name"
         value={title}
         onChange={(ev) => setTitle(ev.target.value)}
+        style={{
+          width: "98%", // Make the select box take up full width
+          padding: "8px", // Adjust padding as needed
+          border: "1px solid #ccc", // Add a border
+          borderRadius: "4px", // Add border radius
+          boxSizing: "border-box", // Include padding and border in width calculation
+        }}
       />
-
+      <br/>
+      
       <label>Category</label>
+      <br/>
       <select
         id="categorySelect"
         defaultValue={category}
+        style={{
+          width: "98%", // Make the select box take up full width
+          padding: "8px", // Adjust padding as needed
+          border: "1px solid #ccc", // Add a border
+          borderRadius: "4px", // Add border radius
+          boxSizing: "border-box", // Include padding and border in width calculation
+        }}
       >
         <option value="">Uncategorized</option>
         {categories.length > 0 &&
@@ -140,11 +157,20 @@ export default function ProductForm({
             </option>
           ))}
       </select>
+      <br/>
 
       <label>Author</label>
+      <br/>
       <select
         id="authorSelect"
         defaultValue={author}
+        style={{
+          width: "98%", // Make the select box take up full width
+          padding: "8px", // Adjust padding as needed
+          border: "1px solid #ccc", // Add a border
+          borderRadius: "4px", // Add border radius
+          boxSizing: "border-box", // Include padding and border in width calculation
+        }}
       >
         <option value="">Select Author</option>
         {authors.length > 0 &&
@@ -154,13 +180,22 @@ export default function ProductForm({
             </option>
           ))}
       </select>
+      <br/>
 
       <label>Photos</label>
+      <br/>
       <div className="mb-2 flex flex-wrap gap-1">
         <ReactSortable
           list={images}
           className="flex flex-wrap gap-1"
           setList={updateImagesOrder}
+          style={{
+            width: "98%", // Make the select box take up full width
+            padding: "8px", // Adjust padding as needed
+            border: "1px solid #ccc", // Add a border
+            borderRadius: "4px", // Add border radius
+            boxSizing: "border-box", // Include padding and border in width calculation
+          }}
         >
           {!!images?.length &&
             images.map((link) => (
@@ -196,80 +231,156 @@ export default function ProductForm({
           <input type="file" onChange={uploadImages} className="hidden" />
         </label>
       </div>
+      <br/>
 
       <label>Description</label>
+      <br/>
       <textarea
         rows="4"
         value={description}
         onChange={(ev) => setDescription(ev.target.value)}
+        style={{
+          width: "98%", // Make the select box take up full width
+          padding: "8px", // Adjust padding as needed
+          border: "1px solid #ccc", // Add a border
+          borderRadius: "4px", // Add border radius
+          boxSizing: "border-box", // Include padding and border in width calculation
+        }}
       ></textarea>
+      <br/>
 
       <label>Price</label>
+      <br/>
       <input
         type="text"
         placeholder="product price"
         value={price}
         onChange={(ev) => setPrice(ev.target.value)}
+        style={{
+          width: "98%", // Make the select box take up full width
+          padding: "8px", // Adjust padding as needed
+          border: "1px solid #ccc", // Add a border
+          borderRadius: "4px", // Add border radius
+          boxSizing: "border-box", // Include padding and border in width calculation
+        }}
       />
+      <br/>
 
       <label>Pages</label>
+      <br/>
       <input
         type="text"
         placeholder="product pages"
         value={pages}
         onChange={(ev) => setPages(ev.target.value)}
+        style={{
+          width: "98%", // Make the select box take up full width
+          padding: "8px", // Adjust padding as needed
+          border: "1px solid #ccc", // Add a border
+          borderRadius: "4px", // Add border radius
+          boxSizing: "border-box", // Include padding and border in width calculation
+        }}
       />
+      <br/>
 
-      <>
-        <label>Width</label>
-        <input
-          type="text"
-          placeholder="product width"
-          value={width}
-          onChange={(ev) => setWidth(ev.target.value)}
-        />
-      </>
+      <label>Width</label>
+      <br/>
+      <input
+        type="text"
+        placeholder="product width"
+        value={width}
+        onChange={(ev) => setWidth(ev.target.value)}
+        style={{
+          width: "98%", // Make the select box take up full width
+          padding: "8px", // Adjust padding as needed
+          border: "1px solid #ccc", // Add a border
+          borderRadius: "4px", // Add border radius
+          boxSizing: "border-box", // Include padding and border in width calculation
+        }}
+      />
+      <br/>
 
         <label>Height</label>
+        <br/>
         <input
           type="text"
           placeholder="product height"
           value={height}
           onChange={(ev) => setHeight(ev.target.value)}
+          style={{
+            width: "98%", // Make the select box take up full width
+            padding: "8px", // Adjust padding as needed
+            border: "1px solid #ccc", // Add a border
+            borderRadius: "4px", // Add border radius
+            boxSizing: "border-box", // Include padding and border in width calculation
+          }}
         />
+        <br/>
 
-        <label>Thickness</label>
+        <label>Thickness</label><br/>
         <input
           type="text"
           placeholder="product thickness"
           value={thickness}
           onChange={(ev) => setThickness(ev.target.value)}
+          style={{
+            width: "98%", // Make the select box take up full width
+            padding: "8px", // Adjust padding as needed
+            border: "1px solid #ccc", // Add a border
+            borderRadius: "4px", // Add border radius
+            boxSizing: "border-box", // Include padding and border in width calculation
+          }}
         />
+        <br/>
 
-        <label>Unit</label>
+        <label>Unit</label><br/>
         <input
           type="text"
           placeholder="product uit"
           value={unit}
           onChange={(ev) => setUnit(ev.target.value)}
+          style={{
+            width: "98%", // Make the select box take up full width
+            padding: "8px", // Adjust padding as needed
+            border: "1px solid #ccc", // Add a border
+            borderRadius: "4px", // Add border radius
+            boxSizing: "border-box", // Include padding and border in width calculation
+          }}
         />
-    
+        <br/>
     
         <label>Published Place</label>
+        <br/>
         <input
           type="text"
           placeholder="product published place"
           value={publishedPlace}
           onChange={(ev) => setPublishedPlace(ev.target.value)}
+          style={{
+            width: "98%", // Make the select box take up full width
+            padding: "8px", // Adjust padding as needed
+            border: "1px solid #ccc", // Add a border
+            borderRadius: "4px", // Add border radius
+            boxSizing: "border-box", // Include padding and border in width calculation
+          }}
         />
+        <br/>
 
-        <label>Edition</label>
+        <label>Edition</label><br/>
         <input
           type="text"
           placeholder="product edition"
           value={edition}
           onChange={(ev) => setEdition(ev.target.value)}
+          style={{
+            width: "98%", // Make the select box take up full width
+            padding: "8px", // Adjust padding as needed
+            border: "1px solid #ccc", // Add a border
+            borderRadius: "4px", // Add border radius
+            boxSizing: "border-box", // Include padding and border in width calculation
+          }}
         />
+        <br/>
 
       <button type="submit" className="btn-primary">Save</button>
     </form>
